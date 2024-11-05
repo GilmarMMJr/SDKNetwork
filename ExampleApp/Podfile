@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ExampleApp' do
+  use_frameworks!
+
+  # Dependência do SDK a partir do caminho local
+  pod 'SDKNetwork', :path => '/Users/gilmar_mendoncalive.com/Documents/Projetos/MentoriaGinas/SDKNetwork'
+
+end
+

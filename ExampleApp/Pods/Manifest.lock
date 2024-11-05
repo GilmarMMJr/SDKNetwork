@@ -1,0 +1,16 @@
+PODS:
+  - SDKNetwork (1.0.0)
+
+DEPENDENCIES:
+  - SDKNetwork (from `/Users/gilmar_mendoncalive.com/Documents/Projetos/MentoriaGinas/SDKNetwork`)
+
+EXTERNAL SOURCES:
+  SDKNetwork:
+    :path: "/Users/gilmar_mendoncalive.com/Documents/Projetos/MentoriaGinas/SDKNetwork"
+
+SPEC CHECKSUMS:
+  SDKNetwork: ed6213e68e599199e80d14771665a4cafeedb598
+
+PODFILE CHECKSUM: e96ad552e476b780cbe4e8594dcf1a21a669508a
+
+COCOAPODS: 1.15.2
