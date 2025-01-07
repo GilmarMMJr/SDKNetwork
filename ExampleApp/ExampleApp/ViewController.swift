@@ -10,8 +10,8 @@ import SDKNetwork
 
 class ViewController: UIViewController {
     
-    let sdkNetwork = SDKNetwork()
-
+    var provider: NetworkProviderProtocol = NetworkProvider()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,16 +20,25 @@ class ViewController: UIViewController {
 
     func fetchExampleData() {
         let url = "https://rickandmortyapi.com/api/character"
+        let headers = ["Content-Type": "application/json"]
+        let body: Data? = nil
+        let queryParams = [String: String]()
+        let method = "GET"
         
-        sdkNetwork.fetchCharacters(from: url) { result in
+        provider.request(url: url,
+                         headers: headers,
+                         body: body,
+                         queryParams: queryParams,
+                         method: method) { (result: Result<CharacterResponse, Error>) in
+            
             switch result {
-            case .success(let characterResponse):
-                print("Número de personagens: \(characterResponse.info.count)")
-                print("Primeiro personagem: \(characterResponse.results.first?.name ?? "Nenhum personagem")")
-            case .failure(let error):
-                print("Erro ao buscar personagens: \(error)")
+            case .success(let success):
+                print("\(success)")
+            case .failure(let failure):
+                print("\(failure)")
             }
         }
+        
     }
 
 }

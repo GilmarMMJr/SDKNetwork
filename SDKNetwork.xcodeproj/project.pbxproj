@@ -8,23 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		80FC66842CD47EB30022F9C4 /* SDKNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FC66832CD47EB30022F9C4 /* SDKNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80FC66C22CD9BE500022F9C4 /* SDKNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66C12CD9BE500022F9C4 /* SDKNetwork.swift */; };
-		80FC66C72CD9BE9B0022F9C4 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66C62CD9BE9B0022F9C4 /* CharacterResponse.swift */; };
-		80FC66C92CD9BF2E0022F9C4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66C82CD9BF2E0022F9C4 /* Character.swift */; };
-		80FC66CB2CD9BF4C0022F9C4 /* Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66CA2CD9BF4C0022F9C4 /* Origin.swift */; };
-		80FC66CD2CD9BF5E0022F9C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66CC2CD9BF5E0022F9C4 /* Location.swift */; };
-		80FC66CF2CD9BF8E0022F9C4 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66CE2CD9BF8E0022F9C4 /* PageInfo.swift */; };
+		80FC66D12CE587DF0022F9C4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC66D02CE587DF0022F9C4 /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80FC66802CD47EB30022F9C4 /* SDKNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDKNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FC66832CD47EB30022F9C4 /* SDKNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKNetwork.h; sourceTree = "<group>"; };
-		80FC66C12CD9BE500022F9C4 /* SDKNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKNetwork.swift; sourceTree = "<group>"; };
-		80FC66C62CD9BE9B0022F9C4 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
-		80FC66C82CD9BF2E0022F9C4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		80FC66CA2CD9BF4C0022F9C4 /* Origin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Origin.swift; sourceTree = "<group>"; };
-		80FC66CC2CD9BF5E0022F9C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		80FC66CE2CD9BF8E0022F9C4 /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		80FC66D02CE587DF0022F9C4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,23 +47,10 @@
 		80FC66822CD47EB30022F9C4 /* SDKNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				80FC66C52CD9BE880022F9C4 /* Models */,
 				80FC66832CD47EB30022F9C4 /* SDKNetwork.h */,
-				80FC66C12CD9BE500022F9C4 /* SDKNetwork.swift */,
+				80FC66D02CE587DF0022F9C4 /* NetworkProvider.swift */,
 			);
 			path = SDKNetwork;
-			sourceTree = "<group>";
-		};
-		80FC66C52CD9BE880022F9C4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				80FC66C82CD9BF2E0022F9C4 /* Character.swift */,
-				80FC66C62CD9BE9B0022F9C4 /* CharacterResponse.swift */,
-				80FC66CC2CD9BF5E0022F9C4 /* Location.swift */,
-				80FC66CA2CD9BF4C0022F9C4 /* Origin.swift */,
-				80FC66CE2CD9BF8E0022F9C4 /* PageInfo.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,12 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80FC66C92CD9BF2E0022F9C4 /* Character.swift in Sources */,
-				80FC66C72CD9BE9B0022F9C4 /* CharacterResponse.swift in Sources */,
-				80FC66CF2CD9BF8E0022F9C4 /* PageInfo.swift in Sources */,
-				80FC66CD2CD9BF5E0022F9C4 /* Location.swift in Sources */,
-				80FC66C22CD9BE500022F9C4 /* SDKNetwork.swift in Sources */,
-				80FC66CB2CD9BF4C0022F9C4 /* Origin.swift in Sources */,
+				80FC66D12CE587DF0022F9C4 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
